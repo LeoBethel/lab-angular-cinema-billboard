@@ -1,0 +1,72 @@
+<div class="container"> 
+  <div class="row room-title">
+    <h4>Room {{movieInfo.room}}</h4>    
+    <h3>  <b>{{movieInfo.title}}</b></h3>
+  </div>   
+  <div class="row"> 
+    <div class="col-lg-4">
+      <div class="img-movie">
+        <img [src]="movieInfo.poster" alt="">
+      </div>  
+    </div>  
+    <div class="col-lg-6">
+          <div class="row myrow">
+            <div class="genres">
+              <p><b> Genres</b></p>
+            </div> 
+            <div class="genre-res">              
+                    <p *ngFor="let oneGenre of movieInfo.genres" >
+                        {{oneGenre}}
+                    </p>                
+            </div>
+          </div> 
+          <div class="row myrow">
+            <div class="year">
+                <p><b> Year</b></p>
+              </div> 
+              <div class="year-res">
+                  <p>{{movieInfo.year}}</p>
+              </div> 
+            </div> 
+            <div class="row myrow">
+              <div class="director">
+                  <p><b>Director</b></p>
+              </div> 
+              <div class="director-res">
+                  <p>{{movieInfo.director}}</p>
+              </div>
+            </div>
+            <div class="row myrow">
+              <div class="actor">
+                  <p><b> Actor</b></p>
+              </div> 
+              <div class="actor-res">              
+                  <p *ngFor="let oneActor of movieInfo.actors" >
+                      {{oneActor}}
+                  </p>                
+              </div>
+            </div>
+            <div class="row myrow">
+                <div class="schedule">
+                    <p><b> Schedule</b></p>
+                </div> 
+                <div class="schedule-res">              
+                    <p *ngFor="let oneSchedule of movieInfo.hours" >
+                        {{oneSchedule}}
+                    </p>                
+                </div>
+            </div>          
+            <div class="column myrow">
+              <div class="synopsis">
+                <p><b> Synopsis</b></p>
+              </div>  
+              <div class="synopsis-res">
+                  {{movieInfo.synopsis}}
+              </div> 
+            </div> 
+            <div class="mybtn">
+               <a routerLink="/"><button type="button" class="btn btn-primary" style="width:150px">Home</button></a> 
+            </div>
+    </div>   
+  </div>
+</div>

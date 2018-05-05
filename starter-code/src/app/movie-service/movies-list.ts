@@ -1,5 +1,17 @@
 
-[
+export class Movie{
+  public id: number;
+  public title: string;
+  public poster: string;
+  public synopsis: string;
+  public genres: string[];
+  public year: number;
+  public director: string;
+  public actors: string[];
+  public hours: string[];
+  public room: number  ;
+}
+const movies: Movie[] = [
   {
     id: 1,
     title: "The Shawshank Redemption",
@@ -17,7 +29,9 @@
       "William Sadler",
       "Clancy Brown",
       "Gil Bellows"
-    ]
+    ],
+    hours: ["Wednesday - 19.45h","Thursday - 18:50h","Friday - 20:15h"],
+    room: 1
   }, {
     id: 2,
     title: "The Godfather",
@@ -35,7 +49,9 @@
       "Richard S. Castellano",
       "Robert Duvall",
       "Sterling Hayden"
-    ]
+    ],
+    hours: ["Wednesday - 19.45h","Thursday - 18:50h","Friday - 20:15h"],
+    room: 2
   }, {
     id: 3,
     title: "The Godfather Part II",
@@ -53,7 +69,9 @@
       "Robert De Niro",
       "John Cazale",
       "Talia Shire"
-    ]
+    ],
+    hours: ["Wednesday - 19.45h","Thursday - 18:50h","Friday - 20:15h"],
+    room: 3
   }, {
     id: 4,
     title: "The Dark Knight",
@@ -71,8 +89,10 @@
       "Michael Caine",
       "Maggie Gyllenhaal",
       "Gary Oldman"
-    ]
-  }, {
+    ],
+    hours: ["Wednesday - 19.45h","Thursday - 18:50h","Friday - 20:15h"],
+    room: 4
+  }, 
   {
     id: 5,
     title: "Schindler's List",
@@ -90,6 +110,10 @@
       "Caroline Goodall",
       "Jonathan Sagall",
       "Embeth Davidtz"
-    ]
+    ],
+    hours: ["Wednesday - 19.45h","Thursday - 18:50h","Friday - 20:15h"],
+    room: 5
   }
 ]
+
+export default movies;

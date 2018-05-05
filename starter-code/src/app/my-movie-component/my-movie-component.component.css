@@ -1,0 +1,43 @@
+.room-title{
+  display:flex;
+  justify-content: flex-start;
+  margin-left:3px
+}
+.room-title>h4{
+  margin-top:3px;
+  margin-right:30px
+}
+.img-movie>img{
+  width:280px;
+}
+p{
+  margin-bottom: 1px
+}
+.genre-res{
+  flex-direction: column
+}
+.genre-res{
+  margin-left: 24px;
+}
+.year-res{
+  margin-left: 43px;
+}
+.director-res{
+  margin-left: 22px;
+}
+.actor-res{
+  margin-left:40px
+}
+
+.schedule-res{
+  margin-left:10px
+}
+.synopsis, .synopsis-res {
+  margin-left:-10px
+}
+.myrow,.synopsis, .synopsis-res {
+  margin-bottom: 10px
+}
+.mybtn{
+  margin-left: 20px
+}

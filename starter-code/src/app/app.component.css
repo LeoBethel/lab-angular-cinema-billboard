@@ -1,0 +1,17 @@
+
+.index-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:20px;  
+  margin-bottom: 50px;  
+}
+img {
+  width: 150px;
+  height: 150px
+
+}
+a, h2{
+display: flex;
+justify-content: center;
+}

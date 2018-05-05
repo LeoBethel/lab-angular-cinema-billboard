@@ -1,0 +1,12 @@
+<div class="container-home">
+  <div class="row">    
+    <div class="card my-card" *ngFor="let oneMovie of movieServ.getMovies()">
+        <h5>ROOM {{oneMovie.room}}</h5>  
+        <a [routerLink]= "['/movie', oneMovie.id]"><img class="card-img-top" src= {{oneMovie.poster}} style="height:400px"/>                   
+          <div class="card-body mycard-body">
+            <p>{{oneMovie.title}}</p> 
+          </div>     
+        </a>
+    </div>
+  </div>
+</div>
